@@ -20,29 +20,23 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
+        page_title="MLB Player HR Predictor",
+        page_icon="🔮",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
-
-    st.sidebar.success("Select a demo above.")
+    st.write("# Welcome MLB Player HR Predictor 👋")
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+        MLB Player HR Predictor is a web application that predicts the number of home runs a Major League Baseball player will hit in a season.
+
+        The application uses a machine learning model trained on data from the 2022 MLB seasons. The model takes a player's statistics from the previous season as input and outputs the predicted number of home runs for the upcoming season.
+
+        This application has two main features:
+
+        1. **Predict HRs**: Enter a player's statistics from the previous season to get the predicted number of home runs for the upcoming season.
+
+        2. **Player Comparison**: Compare the predicted number of home runs for two players based on their statistics from the previous season.
     """
     )
 
